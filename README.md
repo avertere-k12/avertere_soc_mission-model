@@ -3,11 +3,11 @@
 
 #### Prologue
 
-GuardSight analysts use a systematic approach to achieve the objectives of containment, eradication, and recovery during its BreachMasters™ incident response. One component of this approach includes developing content iteratively, in the style of journaling, to describe the adversary compromise as well as the allied response. The aggregated journal content ultimately results in an after action report. Producing the report documentation while conducting the response activities has many benefits including memorializing in near real-time, the increased accuracy of observations and collections, and improved precision of knowledge transfers when transitioning between analysts to manage response fatigue. This document discusses a mechanism for developing the incident response content using the revision control hosting system [Github](https://www.github.com), use of the [Sphinx](http://www.sphinx-doc.org/en/master/) documentation generator, and the optional use of the software hosting system [Read the Docs](https://readthedocs.com/).
+Avertere analysts use a systematic approach to achieve the objectives of containment, eradication, and recovery during its BreachMasters™ incident response. One component of this approach includes developing content iteratively, in the style of journaling, to describe the adversary compromise as well as the allied response. The aggregated journal content ultimately results in an after action report. Producing the report documentation while conducting the response activities has many benefits including memorializing in near real-time, the increased accuracy of observations and collections, and improved precision of knowledge transfers when transitioning between analysts to manage response fatigue. This document discusses a mechanism for developing the incident response content using the revision control hosting system [Github](https://www.github.com), use of the [Sphinx](http://www.sphinx-doc.org/en/master/) documentation generator, and the optional use of the software hosting system [Read the Docs](https://readthedocs.com/).
 
-![img](images/gh.mm.2.png)
+![img](images/av.mm.2.png)
 
-![img](images/gh.mm.3.png)
+![img](images/av.mm.3.png)
 
 
 #### Prerequisites
@@ -30,7 +30,7 @@ GuardSight analysts use a systematic approach to achieve the objectives of conta
 
 #### Instruction
 
-![img](images/gh.mm.1.png)
+![img](images/av.mm.1.png)
 
 ##### Bootstrap
 
@@ -38,12 +38,12 @@ GuardSight analysts use a systematic approach to achieve the objectives of conta
    ```bash
    cd ~/sandbox/code/github
    MISSION=$(date +'MISSION-%Y%m%d-1')
-   MYORG=guardsight # e.g. ==> https://github.com/${MYORG} <== assign MYORG=yourOrganization
+   MYORG=avertere # e.g. ==> https://github.com/${MYORG} <== assign MYORG=yourOrganization
    curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response Journal", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
    Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
    ```bash
-   git clone --bare git@github.com:guardsight/gsvsoc_mission-model MISSION-BOOTSTRAP
+   git clone --bare git@github.com:avertere_k12/avertere_soc_mission-model MISSION-BOOTSTRAP
    cd MISSION-BOOTSTRAP/
    git push --mirror git@github.com:${MYORG}/${MISSION}
    cd .. && rm -rf MISSION-BOOTSTRAP
@@ -57,10 +57,10 @@ GuardSight analysts use a systematic approach to achieve the objectives of conta
 1. Replace some default content
    ```bash
    sed -i "s/MISSION-YYYYMMDD-n/${MISSION}/g" source/index.rst source/meta.txt source/conf.py
-1. Replace the GuardSight copyright with ${MYORG} copyright
+1. Replace the Avertere copyright with ${MYORG} copyright
 1. Replace docs/source/meta-logo.png with ${MYORG} logo 
    
-IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${MISSION} AND THE GUARDSIGHT PERMISSION NOTICE **IS NOT REQUIRED** TO BE INCLUDED IN THE CLONED ${MISSION} OR ANY PORTION OF THE AFTER ACTION REPORT
+IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${MISSION} AND THE AVERTERE PERMISSION NOTICE **IS NOT REQUIRED** TO BE INCLUDED IN THE CLONED ${MISSION} OR ANY PORTION OF THE AFTER ACTION REPORT
    
 ##### Edit <=> Commit
 
@@ -90,7 +90,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 1. View the document
    ```bash
    google-chrome build/singlehtml/index.html
-   google-chrome build/latex/gsvsoc_mission-model.pdf
+   google-chrome build/latex/avertere_soc_mission-model.pdf
 
 ##### Read the Docs For Business Build (optional)
 

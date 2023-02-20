@@ -6,5 +6,5 @@ This document contains confidential and/or privileged material. Any interception
 
 This report is designated as Traffic Light Protocol (TLP): AMBER.  Recipients may share TLP: AMBER information with members of their own organization who need to know, and only as widely as necessary to act on that information.
 
-Copyright (c) GuardSight, Inc. https://www.guardsight.com
+Copyright (c) Avertere, Inc. https://www.avertere.com
 

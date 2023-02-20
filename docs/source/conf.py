@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# gsvsoc_mission-model documentation build configuration file, created by
-# sphinx-quickstart on Thu Jul 26 16:22:48 2018.
+# avertere_soc_mission-model documentation build configuration file, created by
+# sphinx-quickstart on Thu Jul 26 16:22:48 2022.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -49,8 +49,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Incident Response Mission'
-copyright = u'2018, GuardSight, Inc.'
-author = u'johnmac@guardsight.com'
+copyright = u'2022, Avertere, LLC.'
+author = u'jack@avertere.com'
 
 
 # The version info for the project you're documenting, acts as replacement for
@@ -207,7 +207,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'gsvsoc_mission-modeldoc'
+htmlhelp_basename = 'avertere_soc_mission-modeldoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -229,8 +229,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'gsvsoc_mission-model.tex', u'MISSION-YYYYMMDD-n Journal',
-     u'GuardSight, Inc.', 'manual'),
+    (master_doc, 'avertere_soc_mission-model.tex', u'MISSION-YYYYMMDD-n Journal',
+     u'Avertere, LLC.', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -259,7 +259,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'gsvsoc_mission-model', u'MISSION-YYYYMMDD-n Journal',
+    (master_doc, 'avertere_soc_mission-model', u'MISSION-YYYYMMDD-n Journal',
      [author], 1)
 ]
 
@@ -273,8 +273,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'gsvsoc_mission-model', u'gsvsoc_mission-model Documentation',
-     author, 'gsvsoc_mission-model', 'One line description of project.',
+    (master_doc, 'avertere_soc_mission-model', u'avertere_soc_mission-model Documentation',
+     author, 'avertere_soc_mission-model', 'One line description of project.',
      'Miscellaneous'),
 ]
 
