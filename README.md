@@ -43,7 +43,7 @@ Avertere analysts use a systematic approach to achieve the objectives of contain
    Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
    ```bash
-   git clone --bare git@github.com:avertere_k12/avertere_soc_mission-model MISSION-BOOTSTRAP
+   git clone --bare git@github.com:avertere-k12/avertere_soc_mission-model MISSION-BOOTSTRAP
    cd MISSION-BOOTSTRAP/
    git push --mirror git@github.com:${MYORG}/${MISSION}
    cd .. && rm -rf MISSION-BOOTSTRAP
